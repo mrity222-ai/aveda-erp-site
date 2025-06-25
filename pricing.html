@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Pricing – Aveda Technologies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand">
+        <img src="logo.svg" alt="Aveda Technologies" class="logo" />
+        <span>Aveda Technologies</span>
+      </a>
+      <nav>
+        <a href="modules.html">Modules</a>
+        <a href="ai-assistant.html">AI Assistant</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-small btn-outline">Login</a>
+        <a href="signup.html" class="btn btn-small">Sign Up</a>
+      </nav>
+      <div class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+    </div>
+  </header>
+  <main>
+    <section class="container pricing-section">
+      <h1 class="page-title">Pricing</h1>
+      <div class="price-toggle">
+        <span id="monthly-label" class="toggle-label active">Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="price-switch" />
+          <span class="slider"></span>
+        </label>
+        <span id="yearly-label" class="toggle-label">Yearly</span>
+      </div>
+      <div class="pricing-tiers" id="pricing-tiers">
+        <!-- JS will toggle prices below -->
+        <div class="pricing-card">
+          <h2>Free</h2>
+          <div class="price" data-monthly="₹0" data-yearly="₹0">₹0</div>
+          <ul>
+            <li>3 users</li>
+            <li>Core ERP modules</li>
+            <li>Basic AI Assistant</li>
+            <li>Email support</li>
+          </ul>
+          <a href="signup.html" class="btn btn-outline btn-block">Start Free</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="badge">Popular</div>
+          <h2>Pro</h2>
+          <div class="price" data-monthly="₹1499" data-yearly="₹14,999">₹1499</div>
+          <ul>
+            <li>25 users</li>
+            <li>All modules</li>
+            <li>Advanced AI Assistant</li>
+            <li>Custom reports</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="signup.html" class="btn btn-block">Start Pro</a>
+        </div>
+        <div class="pricing-card">
+          <h2>Business</h2>
+          <div class="price" data-monthly="₹3999" data-yearly="₹39,999">₹3999</div>
+          <ul>
+            <li>Unlimited users</li>
+            <li>All features + custom modules</li>
+            <li>Dedicated AI Assistant</li>
+            <li>Integrations & API</li>
+            <li>24/7 support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline btn-block">Contact Sales</a>
+        </div>
+      </div>
+      <h2>Compare Plans</h2>
+      <div class="pricing-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Features</th>
+              <th>Free</th>
+              <th>Pro</th>
+              <th>Business</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Users</td>
+              <td>3</td>
+              <td>25</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Core Modules</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>AI Assistant</td>
+              <td>Basic</td>
+              <td>Advanced</td>
+              <td>Dedicated</td>
+            </tr>
+            <tr>
+              <td>Custom Modules</td>
+              <td>—</td>
+              <td>—</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Analytics & Reports</td>
+              <td>Basic</td>
+              <td>Custom</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>Integrations</td>
+              <td>—</td>
+              <td>Standard</td>
+              <td>API + Custom</td>
+            </tr>
+            <tr>
+              <td>Support</td>
+              <td>Email</td>
+              <td>Priority</td>
+              <td>24/7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="Aveda Technologies" />
+        <span>Aveda Technologies</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="modules.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 Aveda Technologies. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

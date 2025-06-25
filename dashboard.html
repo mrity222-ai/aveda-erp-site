@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>ERP Demo Dashboard – Aveda Technologies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <main>
+    <div class="dashboard-layout">
+      <aside class="dashboard-sidebar">
+        <div class="sidebar-brand">
+          <img src="logo.svg" alt="Aveda Technologies" />
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+          <a href="#"><i class="fas fa-file-invoice-dollar"></i> Finance</a>
+          <a href="#"><i class="fas fa-users"></i> CRM</a>
+          <a href="#"><i class="fas fa-user-tie"></i> HR</a>
+          <a href="#"><i class="fas fa-boxes"></i> Inventory</a>
+          <a href="#"><i class="fas fa-robot"></i> AI Assistant</a>
+          <a href="#"><i class="fas fa-cogs"></i> Settings</a>
+        </nav>
+      </aside>
+      <section class="dashboard-main">
+        <header class="dashboard-topbar">
+          <div class="dashboard-user">
+            <img src="assets/avatar-demo.jpg" alt="User" />
+            <span>Hi, Alex!</span>
+          </div>
+          <div class="dashboard-actions">
+            <input type="text" placeholder="Try: Generate invoice for ₹1500" class="ai-input" />
+            <button class="btn btn-small">Ask AI</button>
+          </div>
+        </header>
+        <div class="dashboard-widgets">
+          <div class="widget">
+            <div class="widget-label">Revenue</div>
+            <div class="widget-value">₹2,10,000</div>
+            <div class="widget-trend up"><i class="fas fa-arrow-up"></i> +8%</div>
+          </div>
+          <div class="widget">
+            <div class="widget-label">Invoices</div>
+            <div class="widget-value">12</div>
+            <div class="widget-trend down"><i class="fas fa-arrow-down"></i> -2%</div>
+          </div>
+          <div class="widget">
+            <div class="widget-label">Inventory</div>
+            <div class="widget-value">1,500 items</div>
+            <div class="widget-trend stable"><i class="fas fa-arrows-alt-h"></i> —</div>
+          </div>
+          <div class="widget">
+            <div class="widget-label">Employees</div>
+            <div class="widget-value">6</div>
+            <div class="widget-trend up"><i class="fas fa-arrow-up"></i> +1</div>
+          </div>
+        </div>
+        <div class="dashboard-table-section">
+          <h2>Recent Invoices</h2>
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Customer</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>INV-00102</td><td>Acme Corp</td><td>₹18,000</td><td><span class="badge paid">Paid</span></td><td>2025-06-20</td></tr>
+              <tr><td>INV-00103</td><td>GreenMart</td><td>₹25,000</td><td><span class="badge due">Due</span></td><td>2025-06-21</td></tr>
+              <tr><td>INV-00104</td><td>NeoSoft</td><td>₹11,200</td><td><span class="badge paid">Paid</span></td><td>2025-06-22</td></tr>
+              <tr><td>INV-00105</td><td>BrightWorks</td><td>₹9,800</td><td><span class="badge overdue">Overdue</span></td><td>2025-06-24</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>

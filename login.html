@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Login – Aveda Technologies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand">
+        <img src="logo.svg" alt="Aveda Technologies" class="logo" />
+        <span>Aveda Technologies</span>
+      </a>
+      <nav>
+        <a href="modules.html">Modules</a>
+        <a href="ai-assistant.html">AI Assistant</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-small btn-outline active">Login</a>
+        <a href="signup.html" class="btn btn-small">Sign Up</a>
+      </nav>
+      <div class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+    </div>
+  </header>
+  <main>
+    <section class="auth-section">
+      <form class="auth-form" autocomplete="off">
+        <h2>Sign In</h2>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="username" placeholder="you@email.com" />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required autocomplete="current-password" placeholder="Password" />
+        <div class="auth-links">
+          <a href="#" id="forgot-password">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-block">Login</button>
+        <div class="auth-or">
+          <span>or</span>
+        </div>
+        <button type="button" class="btn-google btn-block">
+          <i class="fab fa-google"></i> Sign in with Google
+        </button>
+        <div class="auth-alt">
+          Don't have an account? <a href="signup.html">Sign up</a>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="Aveda Technologies" />
+        <span>Aveda Technologies</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="modules.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 Aveda Technologies. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
