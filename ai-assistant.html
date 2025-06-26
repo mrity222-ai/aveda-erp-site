@@ -1,80 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>AI Assistant – Aveda Technologies</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body>
-  <header class="navbar">
-    <div class="container nav-content">
-      <a href="index.html" class="brand">
-        <img src="logo.svg" alt="Aveda Technologies" class="logo" />
-        <span>Aveda Technologies</span>
-      </a>
-      <nav>
-        <a href="modules.html">Modules</a>
-        <a href="ai-assistant.html" class="active">AI Assistant</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html" class="btn btn-small btn-outline">Login</a>
-        <a href="signup.html" class="btn btn-small">Sign Up</a>
-      </nav>
-      <div class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
-    </div>
-  </header>
-  <main>
-    <section class="container ai-assistant-section">
-      <h1>Meet the Aveda AI Assistant</h1>
-      <p class="lead">Work faster and smarter with natural language automation. Just type or speak your command — our AI does the rest!</p>
-      <div class="ai-examples">
-        <h2>Sample Prompts</h2>
-        <ul>
-          <li>“Generate invoice for ₹1500 to Acme Corp.”</li>
-          <li>“Show all overdue payments.”</li>
-          <li>“Add a new employee: Riya Singh.”</li>
-          <li>“Get sales report for May.”</li>
-          <li>“Check inventory for product #A123.”</li>
-          <li>“Approve purchase order 5678.”</li>
-        </ul>
-      </div>
-      <div class="ai-how">
-        <h2>How It Works</h2>
-        <ol>
-          <li>Type or say your command in the AI Assistant box.</li>
-          <li>The AI understands your intent and interacts with ERP data.</li>
-          <li>Instantly see results, get suggestions, or automate complex actions.</li>
-        </ol>
-        <div class="ai-cta">
-          <a href="dashboard.html" class="btn">Try the Demo</a>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f0f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#131118]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#131118] text-lg font-bold leading-tight tracking-[-0.015em]">Aveda Technologies</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Dashboard</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Sales</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Inventory</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Finance</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">CRM</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">AI Assistant</a>
+            </div>
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f1f0f4] text-[#131118] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#131118]" data-icon="Bell" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZWp3S6wuiIxd0VOp7D37AJXYh0sG9tbaInpkljkWASMDwRQJ_sIg9gnTHLavZ7dokPdBBEmByHix6igALV4vTTD9vcQ75hlKlrEvlqmZKAB_2ai_fDaFKNUS4NyW3Yy5Z64YxLC78AofQnFLEnqEdm4l0hwkekh6LA5S9acF7ZwN9OwZPHsuhH9gfhzJnxDO7fVULQ0p_ceCJDTzDB1Jw-1BizqAFB-Ww-NxoVQzOamGcWdgPrvN6xr5HGgruEHjyJfblxpjvtHQ");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#131118] tracking-light text-[32px] font-bold leading-tight">AI Assistant</p>
+                <p class="text-[#6b6189] text-sm font-normal leading-normal">Your intelligent assistant for streamlined business operations.</p>
+              </div>
+            </div>
+            <h2 class="text-[#131118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Capabilities</h2>
+            <p class="text-[#131118] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              AIZO's AI Assistant is designed to enhance your productivity by automating tasks, providing quick answers, and generating insightful reports. Here are some ways it
+              can help:
+            </p>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#131118] text-base font-bold leading-tight">Automate Tasks</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">
+                    Automate repetitive tasks such as invoice creation, payment reminders, and inventory updates, freeing up your time for strategic activities.
+                  </p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5CiuQnmfuUTjq4zHmaZ-6UBypmrNUl8BKQ9tfRUiSr-BMRlqSvS_wPoba7mN9s4hIbB_Tog8-V7AqK81rFiiBmorPTUTzG6XZ6cp-h0Leeetuq2gJpl12idfu_94_QuiB4RvN3jLUp_kWvl8iX2cAp7ZWd5cMG-pRmPIlYKXA2ecpXXLhjgBVryPohuOUdyaFZLJX2Jz74oW31frp7txh_cvuWAQ42mnny18ereEBKGpNzEJoKkU9X_84IvV-PCfzgcSJQJJqiCE");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#131118] text-base font-bold leading-tight">Answer Queries</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">
+                    Get instant answers to your business queries, such as "Show pending leads," "What is the current inventory level for product X?", or "Generate a sales report
+                    for the last quarter."
+                  </p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANswVfdTAkMdmF4zLkceCSow2UkDTaM2lpFJ91eINmFbXWSV-1p08sD6PaJXYej_Bc2taUVVJnVx_kBDlLNoB5gomIiyq4M8mcSNQFGAlWXCGvNgjH0ZDzSssqvotuBrSlIft1pthiORIuBUaGaxFvUNSHd2JBs4gPNUHuGzoR0NlWTrJk6Le4kAnpSEmhndN7nLERSRUSFam0-Qe6mk8PLw7lTrVgRXl3n7G1nCwRctkCPr8tFW89Olx3JVdnarFkGyhkSXxJwVU");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#131118] text-base font-bold leading-tight">Generate Reports</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">
+                    Generate custom reports on sales, inventory, finance, and more, providing you with the data you need to make informed decisions.
+                  </p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-fYBYLW0NHPCByxw6rAZdHQ_U9gvb6tkpnIZ8tt16QTxzycLleLSe2F8tffHNsnIIEqVPiYVvQtHK8wSaSoUJEEgOXc2OYJpQGl4ZQA6B8IzPG6Ya4UICd3mvUd2mtAecxT7dOcl2fkZKBdkQo67qkIfaCYlHSgTdRhaP-5X2QaKXQY5-0ajj_AFpv1tAyecNB7AP6Uv5HP9pNd53KHL6B-JYNfYBSxrP6tl2nSp82vgZmxOUb_1_o6qW4QTMVGg4x0gGe5ZW8jI");'
+                ></div>
+              </div>
+            </div>
+            <h2 class="text-[#131118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Sample Prompts</h2>
+            <p class="text-[#131118] text-base font-normal leading-normal pb-3 pt-1 px-4">Here are some examples of prompts you can use with the AI Assistant:</p>
+            <div class="flex items-center gap-4 bg-white px-4 min-h-14">
+              <div class="text-[#131118] flex items-center justify-center rounded-lg bg-[#f1f0f4] shrink-0 size-10" data-icon="Hash" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M224,88H175.4l8.47-46.57a8,8,0,0,0-15.74-2.86l-9,49.43H111.4l8.47-46.57a8,8,0,0,0-15.74-2.86L95.14,88H48a8,8,0,0,0,0,16H92.23L83.5,152H32a8,8,0,0,0,0,16H80.6l-8.47,46.57a8,8,0,0,0,6.44,9.3A7.79,7.79,0,0,0,80,224a8,8,0,0,0,7.86-6.57l9-49.43H144.6l-8.47,46.57a8,8,0,0,0,6.44,9.3A7.79,7.79,0,0,0,144,224a8,8,0,0,0,7.86-6.57l9-49.43H208a8,8,0,0,0,0-16H163.77l8.73-48H224a8,8,0,0,0,0-16Zm-76.5,64H99.77l8.73-48h47.73Z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-[#131118] text-base font-normal leading-normal flex-1 truncate">"Create invoice for ₹1500"</p>
+            </div>
+            <div class="flex items-center gap-4 bg-white px-4 min-h-14">
+              <div class="text-[#131118] flex items-center justify-center rounded-lg bg-[#f1f0f4] shrink-0 size-10" data-icon="Users" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-[#131118] text-base font-normal leading-normal flex-1 truncate">"Show pending leads"</p>
+            </div>
+            <div class="flex items-center gap-4 bg-white px-4 min-h-14">
+              <div class="text-[#131118] flex items-center justify-center rounded-lg bg-[#f1f0f4] shrink-0 size-10" data-icon="Package" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-[#131118] text-base font-normal leading-normal flex-1 truncate">"What is the current inventory level for product X?"</p>
+            </div>
+            <div class="flex items-center gap-4 bg-white px-4 min-h-14">
+              <div class="text-[#131118] flex items-center justify-center rounded-lg bg-[#f1f0f4] shrink-0 size-10" data-icon="FileText" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-32-80a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,136Zm0,32a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,168Z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-[#131118] text-base font-normal leading-normal flex-1 truncate">"Generate a sales report for the last quarter"</p>
+            </div>
+            <h2 class="text-[#131118] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Benefits</h2>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#131118] text-base font-bold leading-tight">Save Time</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">Reduce the time spent on manual tasks and focus on growing your business.</p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuClAK6XNCKvaUk9nuqTHkxOxQwgGzg2GREeE3NHvx_TLOZ853fXIaOyoPm_AmxtJbTzt2h8fFmj6qt91KB7T5XJJUQEYXRWF28ICuPvXIz-Fp91msSOYvZAc4aJAhJP1xcHpDV55wnYcWkU9WSXTyks-heO2M-lzum8tl1soDvt3NTDebWW6xBm3WF5UFYX35n4eRemF8p9B9he4AV_jctc7x7AHNuiMfZgDESFnbzziDd4-Mm7eN-bNEzytPWHJQ8g7JXLd33Ergs");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#131118] text-base font-bold leading-tight">Reduce Errors</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">
+                    Minimize human errors in data entry and calculations, ensuring accuracy in your business operations.
+                  </p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsdfd0D5Zzqp59950lRrWycSKmNihPddQ4YjG6aGiJKa633ibX60ncISNXi0pPv26o6-yDoZ0fmDMXshcWZmmT1Z5kLmzWkINNA4De1Xb6l_niZl5jeE8oHty7HP59EQos42pPLDw-0XWbk7zPzJHPgIUIn9Xy8qb4hkamslJkTJtSwtYIDNZoollOJFmFt55iClZG6uXoAvomg-5uGHagV5e07GdGZChjAs_xdUGZ5weC2xZhJS0Kikii4UPuhQ40NUCEJ-8Oh8A");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#131118] text-base font-bold leading-tight">Smart Decisions</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">Make data-driven decisions with access to real-time insights and comprehensive reports.</p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBX6Et45KxoAFboBHJWkZHYIlJExNVrkLn7D4rVf4IJEb57-DUM-p2ujkSLcvl75Fs8K8gOrAHSV7sE_3jq9bDt8KtFkfeaboDdl9N6DPn5eLaFz1MFnxGFdS260aKkZjH17Dj8PDu_hF6IZqamE0Qtm2rOa24jcX5gyP827SPIy3U8r4_JbO_EV2JrUktJvh1zce60oZ0LdF8y8_EMutj-_g_TlRMfIFkVdRIG_GPc_nq8H2JdeptFgaDBZExhkUyC1IWS80UeeR8");'
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="ai-img">
-        <img src="assets/ai-chat.svg" alt="AI Assistant Demo" />
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-logo">
-        <img src="logo.svg" alt="Aveda Technologies" />
-        <span>Aveda Technologies</span>
-      </div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="modules.html">Features</a>
-        <a href="pricing.html">Pricing</a>
-      </div>
-      <div class="footer-copy">
-        &copy; 2025 Aveda Technologies. All rights reserved.
-      </div>
     </div>
-  </footer>
-  <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
