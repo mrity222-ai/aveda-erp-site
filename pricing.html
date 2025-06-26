@@ -1,158 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Pricing – Aveda Technologies</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body>
-  <header class="navbar">
-    <div class="container nav-content">
-      <a href="index.html" class="brand">
-        <img src="logo.svg" alt="Aveda Technologies" class="logo" />
-        <span>Aveda Technologies</span>
-      </a>
-      <nav>
-        <a href="modules.html">Modules</a>
-        <a href="ai-assistant.html">AI Assistant</a>
-        <a href="pricing.html" class="active">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html" class="btn btn-small btn-outline">Login</a>
-        <a href="signup.html" class="btn btn-small">Sign Up</a>
-      </nav>
-      <div class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f0f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#131118]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_535)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#131118] text-lg font-bold leading-tight tracking-[-0.015em]">AIZO</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Product</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Solutions</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Resources</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Pricing</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#4913eb] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Book Demo</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#131118] tracking-light text-[32px] font-bold leading-tight">Simple, transparent pricing</p>
+                <p class="text-[#6b6189] text-sm font-normal leading-normal">Choose the plan that's right for your business. Start with a free trial and upgrade as you grow.</p>
+              </div>
+            </div>
+            <div class="flex px-4 py-3">
+              <div class="flex h-10 flex-1 items-center justify-center rounded-lg bg-[#f1f0f4] p-1">
+                <label
+                  class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white has-[:checked]:shadow-[0_0_4px_rgba(0,0,0,0.1)] has-[:checked]:text-[#131118] text-[#6b6189] text-sm font-medium leading-normal"
+                >
+                  <span class="truncate">Monthly</span>
+                  <input type="radio" name="af45debc-0dd2-4fbd-a4ff-de7493a50d1c" class="invisible w-0" value="Monthly" checked="" />
+                </label>
+                <label
+                  class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white has-[:checked]:shadow-[0_0_4px_rgba(0,0,0,0.1)] has-[:checked]:text-[#131118] text-[#6b6189] text-sm font-medium leading-normal"
+                >
+                  <span class="truncate">Yearly</span>
+                  <input type="radio" name="af45debc-0dd2-4fbd-a4ff-de7493a50d1c" class="invisible w-0" value="Yearly" />
+                </label>
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(228px,1fr))] gap-2.5 px-4 py-3 @3xl:grid-cols-4">
+              <div class="flex flex-1 flex-col gap-4 rounded-lg border border-solid border-[#dedbe6] bg-white p-6">
+                <div class="flex flex-col gap-1">
+                  <h1 class="text-[#131118] text-base font-bold leading-tight">Free</h1>
+                  <p class="flex items-baseline gap-1 text-[#131118]">
+                    <span class="text-[#131118] text-4xl font-black leading-tight tracking-[-0.033em]">$0</span>
+                    <span class="text-[#131118] text-base font-bold leading-tight">/month</span>
+                  </p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f1f0f4] text-[#131118] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Get Started</span>
+                </button>
+                <div class="flex flex-col gap-2">
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Up to 5 users
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Basic reporting
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Community support
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col gap-4 rounded-lg border border-solid border-[#dedbe6] bg-white p-6">
+                <div class="flex flex-col gap-1">
+                  <div class="flex items-center justify-between">
+                    <h1 class="text-[#131118] text-base font-bold leading-tight">Pro</h1>
+                    <p class="text-white text-xs font-medium leading-normal tracking-[0.015em] rounded-lg bg-[#4913eb] px-3 py-[3px] text-center">Most Popular</p>
+                  </div>
+                  <p class="flex items-baseline gap-1 text-[#131118]">
+                    <span class="text-[#131118] text-4xl font-black leading-tight tracking-[-0.033em]">$49</span>
+                    <span class="text-[#131118] text-base font-bold leading-tight">/month</span>
+                  </p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f1f0f4] text-[#131118] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Choose Plan</span>
+                </button>
+                <div class="flex flex-col gap-2">
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Unlimited users
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Advanced reporting
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Priority support
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Custom integrations
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col gap-4 rounded-lg border border-solid border-[#dedbe6] bg-white p-6">
+                <div class="flex flex-col gap-1">
+                  <h1 class="text-[#131118] text-base font-bold leading-tight">Business</h1>
+                  <p class="flex items-baseline gap-1 text-[#131118]">
+                    <span class="text-[#131118] text-4xl font-black leading-tight tracking-[-0.033em]">$99</span>
+                    <span class="text-[#131118] text-base font-bold leading-tight">/month</span>
+                  </p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f1f0f4] text-[#131118] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Contact Sales</span>
+                </button>
+                <div class="flex flex-col gap-2">
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Unlimited users
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Advanced reporting
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Priority support
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Custom integrations
+                  </div>
+                  <div class="text-[13px] font-normal leading-normal flex gap-3 text-[#131118]">
+                    <div class="text-[#131118]" data-icon="Check" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                      </svg>
+                    </div>
+                    Dedicated account manager
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#6b6189] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                <a class="text-[#6b6189] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#6b6189] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+              </div>
+              <p class="text-[#6b6189] text-base font-normal leading-normal">© 2023 Aveda Technologies. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
     </div>
-  </header>
-  <main>
-    <section class="container pricing-section">
-      <h1 class="page-title">Pricing</h1>
-      <div class="price-toggle">
-        <span id="monthly-label" class="toggle-label active">Monthly</span>
-        <label class="switch">
-          <input type="checkbox" id="price-switch" />
-          <span class="slider"></span>
-        </label>
-        <span id="yearly-label" class="toggle-label">Yearly</span>
-      </div>
-      <div class="pricing-tiers" id="pricing-tiers">
-        <!-- JS will toggle prices below -->
-        <div class="pricing-card">
-          <h2>Free</h2>
-          <div class="price" data-monthly="₹0" data-yearly="₹0">₹0</div>
-          <ul>
-            <li>3 users</li>
-            <li>Core ERP modules</li>
-            <li>Basic AI Assistant</li>
-            <li>Email support</li>
-          </ul>
-          <a href="signup.html" class="btn btn-outline btn-block">Start Free</a>
-        </div>
-        <div class="pricing-card featured">
-          <div class="badge">Popular</div>
-          <h2>Pro</h2>
-          <div class="price" data-monthly="₹1499" data-yearly="₹14,999">₹1499</div>
-          <ul>
-            <li>25 users</li>
-            <li>All modules</li>
-            <li>Advanced AI Assistant</li>
-            <li>Custom reports</li>
-            <li>Priority support</li>
-          </ul>
-          <a href="signup.html" class="btn btn-block">Start Pro</a>
-        </div>
-        <div class="pricing-card">
-          <h2>Business</h2>
-          <div class="price" data-monthly="₹3999" data-yearly="₹39,999">₹3999</div>
-          <ul>
-            <li>Unlimited users</li>
-            <li>All features + custom modules</li>
-            <li>Dedicated AI Assistant</li>
-            <li>Integrations & API</li>
-            <li>24/7 support</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline btn-block">Contact Sales</a>
-        </div>
-      </div>
-      <h2>Compare Plans</h2>
-      <div class="pricing-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Features</th>
-              <th>Free</th>
-              <th>Pro</th>
-              <th>Business</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Users</td>
-              <td>3</td>
-              <td>25</td>
-              <td>Unlimited</td>
-            </tr>
-            <tr>
-              <td>Core Modules</td>
-              <td>✔️</td>
-              <td>✔️</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <td>AI Assistant</td>
-              <td>Basic</td>
-              <td>Advanced</td>
-              <td>Dedicated</td>
-            </tr>
-            <tr>
-              <td>Custom Modules</td>
-              <td>—</td>
-              <td>—</td>
-              <td>✔️</td>
-            </tr>
-            <tr>
-              <td>Analytics & Reports</td>
-              <td>Basic</td>
-              <td>Custom</td>
-              <td>Advanced</td>
-            </tr>
-            <tr>
-              <td>Integrations</td>
-              <td>—</td>
-              <td>Standard</td>
-              <td>API + Custom</td>
-            </tr>
-            <tr>
-              <td>Support</td>
-              <td>Email</td>
-              <td>Priority</td>
-              <td>24/7</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-logo">
-        <img src="logo.svg" alt="Aveda Technologies" />
-        <span>Aveda Technologies</span>
-      </div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="modules.html">Features</a>
-        <a href="pricing.html">Pricing</a>
-      </div>
-      <div class="footer-copy">
-        &copy; 2025 Aveda Technologies. All rights reserved.
-      </div>
-    </div>
-  </footer>
-  <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
