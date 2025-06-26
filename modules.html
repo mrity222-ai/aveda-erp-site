@@ -1,102 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>ERP Modules – Aveda Technologies</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body>
-  <header class="navbar">
-    <div class="container nav-content">
-      <a href="index.html" class="brand">
-        <img src="logo.svg" alt="Aveda Technologies" class="logo" />
-        <span>Aveda Technologies</span>
-      </a>
-      <nav>
-        <a href="modules.html" class="active">Modules</a>
-        <a href="ai-assistant.html">AI Assistant</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html" class="btn btn-small btn-outline">Login</a>
-        <a href="signup.html" class="btn btn-small">Sign Up</a>
-      </nav>
-      <div class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f0f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#131118]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_535)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#131118] text-lg font-bold leading-tight tracking-[-0.015em]">AIZO</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Dashboard</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Modules</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Reports</a>
+              <a class="text-[#131118] text-sm font-medium leading-normal" href="#">Settings</a>
+            </div>
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f1f0f4] text-[#131118] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#131118]" data-icon="Bell" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBeQa0CJhI3UMPKDcnkhpFbTUcYVJo2G5g9LWtnGTtoAoZpFH-IVeZrcV-t4Q9hFcbamawDe7Aoso1vqsILbVPMbDskoV2cSkHG1OppuT7HaKl3FawtJGYvYSUsJ30RO_7lz1j-4r_ZlfWmavBjIywGPmkBdAhUGPOQtAqYFrnXjI2jTc9Q2BB2l5zflTMYqCBXIMIOBR_s7BbrJmtkM2UOIkrU-nD64v6AbO9yMQa5RJuSbQNUxHRAG-YAhCyoTvriSZo6T-ODjC0");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#131118] tracking-light text-[32px] font-bold leading-tight">Modules</p>
+                <p class="text-[#6b6189] text-sm font-normal leading-normal">Explore the core modules of AIZO to streamline your business operations.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUTlU-GlQraX4yUHVQanBiODyxjpPZwT-xS4GMWD6qWlz__tHX0hKfvWNrY50MClU-MiDM5J1-gYdzq86J9y4P_NyynFai9yFbt8KdY2IYVZbVZgL823FLdEP5qKyDNh3MM30bB6PDNBE2jrrCLAgMwtlttELjy9NHp7PLc7M4HtkyGWSvmqfRHH2RCqd2fcmZi7VtGVLToBNK4uwSJi3WR7NnKaoJKGGZWdRsyqB2_Ro87ljwbM16zAoXU-R8dmYzo5dnk1aChQE");'
+                ></div>
+                <div>
+                  <p class="text-[#131118] text-base font-medium leading-normal">Finance &amp; Accounting</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">Manage your finances with precision and gain insights into your financial health.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAigwZM16ZF17ExMihko5bkfcL_kATI2t6GfjFTwgzOPoNcab_qLwE3Qf0unqZVlh8qGGyPlBk3HhIdwPmLpr4vBvRnF0DncJKhvq2fCyKRMh9bbwdpVh514OP2RxqFzwoKsqLQz8L74aCkVWC2IAalI3zg3ggRW1yNQZaByj5_Z44RxGUk5TdSMWZH23MSu203MsNNNWUh7kh9EOcX1NtGuFkFp5_GocM3bZdkPDjraSVBWWGrXaXH1xfCxFBaBZrcRq5Kf2TvC4U");'
+                ></div>
+                <div>
+                  <p class="text-[#131118] text-base font-medium leading-normal">Inventory Management</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">Track and manage your inventory efficiently to optimize stock levels and reduce costs.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAsO5C_1kL9vnd55thFOMi4GUDsSZ2-FJ40Jmg0_RU7ZAA5DfoROVEL3UKLRQPKyuSGN_P1VSMcGCAKqL5JkeRKTAVBP6PWmVZWdnoLOSA4fzxP__9a8rfmoON978T4rMY5ygTQvBKaDpQNQCcimN_0XdTvCKOHb-XjEu67yeXtvxnNLX5ZtcrXMFddwvjKGJIice71-vD0bolJ_n0vBRUpq31S3Iykb_jFwAtlj7ihrLpyhUSce0GmwDPHDXMHlBy5-9qBlxpaBM");'
+                ></div>
+                <div>
+                  <p class="text-[#131118] text-base font-medium leading-normal">CRM &amp; Leads</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">Build and nurture customer relationships, manage leads, and improve sales effectiveness.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzSHNsnjHDn6MvZtYsTiX-21W3bDfhG9Xq5TAFfxrXFs3xu6fk4aH5vefCXP8MdSdUCARg9Jd5nvsZcsRxb_rqzjsEyeeJOg_3EitrlmLC92-S6w8i-xaxNZiFVYejUwfCJuXD4QK6JGATVidO_qFKOfKVaHgCXpjL2Mu9JdMtMZbL7G-e_cpNGardNU3xbQJai-el2ti_AqbYdj0--eOcLQrL1Xev9TS5pYPr3keMSvP9fD5P3NB4pS_7TINesJKbhSi8Ccr6R2o");'
+                ></div>
+                <div>
+                  <p class="text-[#131118] text-base font-medium leading-normal">Sales &amp; Purchase</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">Streamline your sales and purchasing processes, from order to fulfillment.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhXekmg2s2EJLBXB1d647shy_-sGM5CtAnJU1pJq6sfkYRWJjV6d7sQ1xaqnaOxAYCejDUmivZlQ-EiKisDYvyRVqVb_-D0fqGrLdncIBdtkVUWZBIuL2ypYd2BBvaXj2jmcA3hyIc7Dw6Ayuw38juUBFPZBd83hENVEFENFBoDh9OUvVGwKIqRh5lDt2wfKsbLozP9Rl_4Dg2OlcWP44YXPWlHgPamumdSr7cR8aex_vge4sYUbSk5E6XinySIuSp_S3gApC3OeA");'
+                ></div>
+                <div>
+                  <p class="text-[#131118] text-base font-medium leading-normal">HR &amp; Payroll</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">Manage your human resources, payroll, and employee information seamlessly.</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzfNVgE58FqtyKHYQG_QIETEwrJfxgsSVXXZIbltBeo7ryZKIntR9nYuXog4ecCiCLjeEh8lghDcUARe0wNcJb6tpRXyOqSYx6x7S08eC6EPmKaMlGoiRxDr6i75VALLljp95941Z_zR43xCBzmHde3nABKdGl0u0FNWZvNoSycTlQ5gN203vgKZhBWVOKDweA3PQKvHDBWxEwlmFu_mmB2Rv6SSky2cqfJ_2uVnCXkV5pQsu8LFE70CfXCJb0yKhW9XwvCvtBcs");'
+                ></div>
+                <div>
+                  <p class="text-[#131118] text-base font-medium leading-normal">AI Assistant</p>
+                  <p class="text-[#6b6189] text-sm font-normal leading-normal">Leverage AI to automate tasks, gain insights, and enhance decision-making.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#6b6189] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#6b6189] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                <a class="text-[#6b6189] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+              </div>
+              <p class="text-[#6b6189] text-base font-normal leading-normal">@2024 Aveda Technologies. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
     </div>
-  </header>
-  <main>
-    <section class="container">
-      <h1 class="page-title">ERP Modules</h1>
-      <div class="modules-detail-grid">
-        <!-- Module Card Example -->
-        <div class="mod-card mod-detail">
-          <div class="mod-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-          <h3>Finance</h3>
-          <p>Automate your accounting workflows. Invoicing, expense tracking, payments, GST & tax, financial reports, and bank reconciliation — all in one place.</p>
-        </div>
-        <div class="mod-card mod-detail">
-          <div class="mod-icon"><i class="fas fa-users"></i></div>
-          <h3>CRM</h3>
-          <p>Capture, nurture, and convert leads. Manage sales pipelines, customer interactions, and follow-ups. Email, call, and activity logging included.</p>
-        </div>
-        <div class="mod-card mod-detail">
-          <div class="mod-icon"><i class="fas fa-user-tie"></i></div>
-          <h3>HR & Payroll</h3>
-          <p>Employee profiles, attendance, leave, payroll, payslips, and performance — with automated reminders and compliance.</p>
-        </div>
-        <div class="mod-card mod-detail">
-          <div class="mod-icon"><i class="fas fa-boxes"></i></div>
-          <h3>Inventory</h3>
-          <p>Multi-warehouse stock management, low-stock alerts, batch & serial tracking, and order fulfillment. Integrates with sales & purchasing.</p>
-        </div>
-        <div class="mod-card mod-detail">
-          <div class="mod-icon"><i class="fas fa-shopping-cart"></i></div>
-          <h3>Purchasing</h3>
-          <p>Supplier records, purchase orders, approvals, and invoice matching. Track spend and optimize procurement.</p>
-        </div>
-        <div class="mod-card mod-detail">
-          <div class="mod-icon"><i class="fas fa-truck"></i></div>
-          <h3>Sales</h3>
-          <p>Quotes, sales orders, and customer management. Track deals from lead to cash — with e-signature and automated workflows.</p>
-        </div>
-        <div class="mod-card mod-detail">
-          <div class="mod-icon"><i class="fas fa-robot"></i></div>
-          <h3>AI Assistant</h3>
-          <p>Intelligent chat to automate tasks and surface insights using simple language: <span class="monospace">“Show me all pending invoices.”</span></p>
-        </div>
-        <div class="mod-card mod-detail">
-          <div class="mod-icon"><i class="fas fa-chart-line"></i></div>
-          <h3>Analytics</h3>
-          <p>Custom dashboards, KPIs, and exportable reports. Visualize every aspect of your business in real time.</p>
-        </div>
-        <div class="mod-card mod-detail">
-          <div class="mod-icon"><i class="fas fa-cogs"></i></div>
-          <h3>Integrations</h3>
-          <p>Connect with GST, Tally, e-invoicing, WhatsApp, email, and more. Open API for custom connections.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-logo">
-        <img src="logo.svg" alt="Aveda Technologies" />
-        <span>Aveda Technologies</span>
-      </div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="modules.html">Features</a>
-        <a href="pricing.html">Pricing</a>
-      </div>
-      <div class="footer-copy">
-        &copy; 2025 Aveda Technologies. All rights reserved.
-      </div>
-    </div>
-  </footer>
-  <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
